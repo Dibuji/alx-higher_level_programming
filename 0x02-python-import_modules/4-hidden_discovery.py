@@ -5,7 +5,7 @@ if __name__ == "__main__":
     hidden = dir(hidden_4)
     hidden.sort()
     for i in hidden:
-        if i[0] == "__":
+        if i[0] == "_" and i[1] == "_":
             pass
         else:
             print("{}".format(i))
