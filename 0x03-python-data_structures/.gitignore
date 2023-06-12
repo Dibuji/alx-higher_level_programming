@@ -1,0 +1,5 @@
+*.pyc
+*.swp
+*main.py
+executable
+fixgit
