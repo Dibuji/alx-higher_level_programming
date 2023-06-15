@@ -5,7 +5,7 @@ def best_score(a_dictionary):
         return None
 
     comp_keys = list(a_dictionary)
-    
+
     larger = comp_keys[0]
     for key in comp_keys:
         if a_dictionary.get(key) > a_dictionary.get(larger):
