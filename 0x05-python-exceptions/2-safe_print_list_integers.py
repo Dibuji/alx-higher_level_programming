@@ -3,16 +3,16 @@
 def safe_print_list_integers(my_list=[], x=0):
     total = 0
     try:
-        for item in my_list[:x]:
+        for item in my_list:
             try:
-                if total < x:
-                    print("{:d}".format(int(item)), end="")
+                if isinstance(item, int):
+                    print("{:d}".format(item), end="")
                     total += 1
-                else:
-                    break
+                    if total == x:
+                        break
+
             except (ValueError, TypeError):
                 pass
-    except IndexError:
-        raise Exception("IndexError: list index out of range")
-    print("")
+    finally:
+        print("")
     return total
