@@ -4,4 +4,9 @@
 
 def class_to_json(obj):
     """Return the dictionary represntation of a simple data structure."""
-     return obj.__dict__
+    serialized = {}
+    for key in obj.__dict__:
+        value = getattr(obj, key)
+        if isinstance(value, (list, dict, str, int, bool)):
+            serialized[key] = value
+    return serialized
