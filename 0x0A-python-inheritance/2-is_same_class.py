@@ -6,8 +6,8 @@ def is_same_class(obj, a_class):
     """Function that returns True or False.
 
     Args:
-        obj (object): Object to be checked
-        a_class (class): class to be checked against
+        obj (any): Object to be checked
+        a_class (type): class to be checked against
     """
     if isinstance(obj, a_class):
         return True
