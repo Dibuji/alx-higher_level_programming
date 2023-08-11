@@ -1,6 +1,6 @@
 #!/bin/bash
 
 for filename in "$@"; do
-	chmod u + x "$filename"
+	chmod u+x "$filename"
 	echo "File '$filename' is now executable."
 done
