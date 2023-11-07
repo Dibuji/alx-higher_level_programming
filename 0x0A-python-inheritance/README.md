@@ -1,1 +1,1 @@
-README File for Inheritance Concept Project in Python
+README file for the python inheritance project
