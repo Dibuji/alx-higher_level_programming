@@ -100,9 +100,24 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        """Prints Rectangle instance with # Character"""
+        """Prints Rectangle instance with # Character
+            Takes care of x and y coordinates as well
+        """
 
         for i in range(self.y):
             print()
         for i in range(self.height):
             print(" " * self.x + "#" * self.width)
+
+    def update(self, *args):
+        """Method that assigns an argument to each attribute"""
+        if len(args) > 0:
+            self.id = args[0]
+        if len(args) > 1:
+            self.width = args[1]
+        if len(args) > 2:
+            self.height = args[2]
+        if len(args) > 3:
+            self.x = args[3]
+        if len(args) > 4:
+            self.y = args[4]
