@@ -9,7 +9,6 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize a new Rectangle
-
         Args:
             width (int): The width of the new rectangle.
             height (int): The height of the new rectangle
@@ -102,5 +101,8 @@ class Rectangle(Base):
 
     def display(self):
         """Prints Rectangle instance with # Character"""
+
+        for i in range(self.y):
+            print()
         for i in range(self.height):
-            print("#" * self.width)
+            print(" " * self.x + "#" * self.width)
