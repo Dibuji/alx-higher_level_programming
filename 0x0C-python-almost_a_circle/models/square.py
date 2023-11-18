@@ -32,7 +32,7 @@ class Square(Rectangle):
             attributes = ['id', 'size', 'x', 'y']
             for attr, value in zip(attributes, args):
                 setattr(self, attr, value)
-        
+
         elif kwargs:
             """Update using keyword arguments if no args exist"""
             for key, value in kwargs.items():
